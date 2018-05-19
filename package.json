@@ -1,0 +1,19 @@
+{
+  "fitbit": {
+    "appUUID": "77e851dd-50d8-44dc-97c1-53d41dacdb20",
+    "appType": "clockface",
+    "appDisplayName": "WorkoutBuddy",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "WorkoutBuddy"
+      }
+    }
+  }
+}
