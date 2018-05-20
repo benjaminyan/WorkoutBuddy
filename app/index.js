@@ -3,7 +3,9 @@ import document from "document";
 import { preferences } from "user-settings";
 import * as util from "../common/utils";
 import document from "document";
+import { user } from "user-profile";
 
+console.log((user.restingHeartRate || "Unknown") + " BPM");
 /*// Update the clock every minute
 clock.granularity = "minutes";
 
@@ -25,13 +27,16 @@ clock.ontick = (evt) => {
   myLabel.text = `${hours}:${mins}`;
 }*/
 
-let container = document.getElementById("container");
+let container = document.getElementById("view-header");
 
 // Get the selected index
-let currentIndex = container.value;
+//let currentIndex = container.value;
 
 // Set the selected index
-container.value = 0; // jump to first slide
+//container.value = 0; // jump to first slide
+
+
+
 
 
 

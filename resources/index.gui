@@ -1,7 +1,36 @@
 <svg>
-  <use id="container" href="#panoramaview">
+   <use id="container" href="#panoramaview">
     <use id="item1" href="#panoramaview-item">
-      <rect width="100%" height="100%" fill="red" />
+      <rect width="100%" height="100%" fill="white" />
+      <defs>
+   <symbol id="view-header" href="#scrollview-header">
+      <rect fill="inherit" x="0" y="0" width="100%" height="100%"/>
+      <text id="text" x="5" y="50%+10" fill="black" font-size="30"
+        font-weight="bold" />
+    </symbol>
+  </defs>
+<use href="#scrollview">
+  <use href="#view-header" height="40" fill="gray">
+      <set href="#text" attributeName="text-buffer" to="Benjamin Yan" />
+    </use>
+<use href="#scrollview-item" height="600" fill="white">
+   <rect width="100%" height="650" fill="fb-white" />
+<text id="test" x="10" y="50">this is line 1</text>
+<text id="test" x="10" y="100">this is line 2</text>
+<text id="test" x="10" y="150">this is line 3</text>
+<text id="test" x="10" y="200">this is line 4</text>
+<text id="test" x="10" y="250">this is line 5</text>
+<text id="test" x="10" y="300">this is line 6</text>
+<text id="test" x="10" y="350">this is line 7</text>
+<text id="test" x="10" y="400">this is line 8</text>
+<text id="test" x="10" y="450">this is line 9</text>
+<text id="test" x="10" y="500">this is line 10</text>
+<text id="test" x="10" y="550">this is line 11</text>
+<text id="test" x="10" y="600">this is line 12</text>
+</use>
+
+<use href="#scrollview-item" height="50"></use>
+</use>
     </use>
     <use id="item2" href="#panoramaview-item">
       <rect width="100%" height="100%" fill="green" />
@@ -23,4 +52,5 @@
       <use href="#pagination-highlight-dot" />
     </use>
   </use>
+  
 </svg>
